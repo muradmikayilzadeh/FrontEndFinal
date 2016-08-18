@@ -1,0 +1,40 @@
+#forEveryStartup{
+	.tab{
+		width:180px;
+		height: 60px;
+		border: 1px solid lightgrey;
+		display: inline-block;
+		text-align: center;
+		padding: 20px 10px;
+		margin-top: 60px;
+		transition: background 300ms,color 300ms;
+		&:hover{
+			background:#1AC6FF;
+			color:white;
+			cursor: pointer;
+		}
+	}
+	.tab:first-child{
+		background: #1AC6FF;
+		color:white;
+	}
+	.second{
+		margin-top: 60px;
+	}
+	img{
+		margin-bottom: 5px;
+	}
+	h1{
+		font-weight: 300;
+		margin-top: 105px;
+		margin-right: 45px;
+		span{
+			color:#22C8FF;
+		}
+	}
+	p{
+		font-weight: 400;
+		font-size:16px;
+		margin-right: 45px;
+	}
+}

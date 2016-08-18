@@ -1,0 +1,21 @@
+#feature{
+	.setir{
+		display: flex;
+		text-align: center;
+		padding-left:15px;
+		padding-right:15px;
+		margin-top: 45px;
+		.feature{
+			&:hover i{
+				color:#76DDFF;
+			}
+			i,h4,p{
+				display: block;	
+			}
+			i{
+				font-size:53px;
+				color:#1BC6FF;
+			}
+		}
+	}
+}

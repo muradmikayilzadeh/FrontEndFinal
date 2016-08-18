@@ -1,0 +1,41 @@
+.navbar{
+	background:transparent;
+	border:none;
+	li{
+		line-height: 45px;
+		margin-top: 20px;
+		display: inline-block;
+		color:lightgray;
+		text-transform: uppercase;
+		margin-left: 25px;
+		&:hover{
+			color:skyblue;
+			cursor:pointer;
+		}
+	}
+	li:nth-child(2){
+		border-bottom:3px solid skyblue;
+		color:skyblue;
+	}
+	li:last-child{
+		border:1px solid skyblue;
+		padding:0 20px;
+		border-radius:2px;
+		line-height: 35px;
+		float: right;
+		margin-right: 65px;
+		color:skyblue;
+		transition:background 900ms,color 900ms;
+		&:hover{
+			color:white;
+			background:skyblue;
+		}
+	}
+	img{
+		height: 30px;
+		margin-top: -5px;
+	}
+	li:nth-child(10){
+		margin-left: 200px;
+	}
+}

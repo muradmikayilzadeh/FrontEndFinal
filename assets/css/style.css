@@ -1,0 +1,475 @@
+body {
+  background: url("../images/bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
+
+.navbar {
+  background: transparent;
+  border: none; }
+  .navbar li {
+    line-height: 45px;
+    margin-top: 20px;
+    display: inline-block;
+    color: lightgray;
+    text-transform: uppercase;
+    margin-left: 25px; }
+    .navbar li:hover {
+      color: skyblue;
+      cursor: pointer; }
+  .navbar li:nth-child(2) {
+    border-bottom: 3px solid skyblue;
+    color: skyblue; }
+  .navbar li:last-child {
+    border: 1px solid skyblue;
+    padding: 0 20px;
+    border-radius: 2px;
+    line-height: 35px;
+    float: right;
+    margin-right: 65px;
+    color: skyblue;
+    transition: background 900ms,color 900ms; }
+    .navbar li:last-child:hover {
+      color: white;
+      background: skyblue; }
+  .navbar img {
+    height: 30px;
+    margin-top: -5px; }
+  .navbar li:nth-child(10) {
+    margin-left: 200px; }
+
+#header h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 58px;
+  padding-top: 160px; }
+  #header h1 span {
+    color: skyblue; }
+#header h5 {
+  font-size: 24px;
+  color: white;
+  font-weight: 300; }
+#header button {
+  border: none;
+  border-radius: 3px;
+  margin-top: 30px; }
+#header button:nth-child(3) {
+  color: white;
+  background: skyblue;
+  padding: 17px 50px;
+  min-width: 144px; }
+#header button:last-child {
+  padding: 15px 25px;
+  color: white;
+  border: 1px solid white;
+  background: none;
+  margin-left: 10px;
+  font-weight: 500;
+  transition: background 500ms,color 500ms; }
+  #header button:last-child:hover {
+    background: white;
+    color: skyblue; }
+
+#logo img {
+  margin-left: 60px;
+  margin-top: 30px; }
+
+#forEveryStartup .tab {
+  width: 180px;
+  height: 60px;
+  border: 1px solid lightgrey;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 60px;
+  transition: background 300ms,color 300ms; }
+  #forEveryStartup .tab:hover {
+    background: #1AC6FF;
+    color: white;
+    cursor: pointer; }
+#forEveryStartup .tab:first-child {
+  background: #1AC6FF;
+  color: white; }
+#forEveryStartup .second {
+  margin-top: 60px; }
+#forEveryStartup img {
+  margin-bottom: 5px; }
+#forEveryStartup h1 {
+  font-weight: 300;
+  margin-top: 105px;
+  margin-right: 45px; }
+  #forEveryStartup h1 span {
+    color: #22C8FF; }
+#forEveryStartup p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 45px; }
+
+#technology img {
+  margin-top: -5px; }
+#technology h1 {
+  font-weight: 300;
+  margin-top: 105px; }
+  #technology h1 span {
+    color: #22C8FF; }
+#technology p {
+  font-weight: 400;
+  font-size: 16px; }
+
+#helmet img {
+  margin-top: -5px; }
+#helmet h1 {
+  font-weight: 300;
+  margin-top: 105px; }
+  #helmet h1 span {
+    color: #22C8FF; }
+#helmet p {
+  font-weight: 400;
+  font-size: 16px; }
+
+#comp ul {
+  margin-top: 115px; }
+#comp li {
+  height: 140px;
+  list-style-type: none;
+  border-radius: 3px; }
+  #comp li p:first-child {
+    font-size: 20px;
+    color: #1AC6FF;
+    font-weight: bold;
+    padding-top: 30px; }
+  #comp li p {
+    padding-left: 20px; }
+#comp li:first-child {
+  background: #1AC6FF; }
+  #comp li:first-child p:first-child {
+    color: white; }
+  #comp li:first-child p:last-child {
+    color: white; }
+#comp img {
+  margin-top: 100px;
+  margin-left: -100px;
+  display: inline-block; }
+
+#feature .setir {
+  display: flex;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 45px; }
+  #feature .setir .feature:hover i {
+    color: #76DDFF; }
+  #feature .setir .feature i, #feature .setir .feature h4, #feature .setir .feature p {
+    display: block; }
+  #feature .setir .feature i {
+    font-size: 53px;
+    color: #1BC6FF; }
+
+#updates h1 {
+  font-weight: 300;
+  font-size: 45px;
+  color: white;
+  margin-top: 30px; }
+#updates p {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  margin-top: -10px; }
+#updates .inputs input {
+  margin-top: 45px;
+  width: 190px;
+  height: 50px;
+  border: none;
+  border-left: 3px solid #1AC6FF;
+  font-size: 17px;
+  padding-left: 10px; }
+#updates .inputs .email {
+  margin-left: 10px;
+  width: 270px; }
+#updates .inputs button {
+  width: 145px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: transparent;
+  color: white;
+  margin-left: 10px;
+  transition: background 300ms,color 300ms; }
+  #updates .inputs button:hover {
+    background: white;
+    color: #1AC6FF; }
+
+#price h1 {
+  font-weight: 300;
+  margin-top: 80px;
+  margin-right: 45px;
+  font-size: 45px; }
+  #price h1 span {
+    color: #22C8FF; }
+#price p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 45px; }
+#price .price {
+  text-align: center;
+  margin-top: 50px; }
+  #price .price .heading {
+    height: 60px;
+    background: #F8F8F8;
+    background: #F8F8F8;
+    font-size: 25px;
+    padding-top: 10px;
+    color: #A3A3A3;
+    font-weight: 300; }
+  #price .price .cost {
+    font-size: 115px;
+    font-weight: 400;
+    height: 240px;
+    background: #F3F3F3; }
+    #price .price .cost .currency {
+      font-size: 47px;
+      position: relative;
+      top: -40px; }
+    #price .price .cost .period {
+      font-size: 15px;
+      display: block;
+      margin-top: -20px; }
+  #price .price .blue {
+    color: #1AC6FF; }
+  #price .price .details {
+    background: #F8F8F8; }
+    #price .price .details ul {
+      padding-top: 30px;
+      padding-right: 40px; }
+    #price .price .details li {
+      list-style-type: none;
+      font-size: 16px;
+      line-height: 55px;
+      border-bottom: 1px solid lightgray; }
+    #price .price .details li:last-child {
+      border-bottom: none; }
+    #price .price .details button {
+      width: 270px;
+      height: 45px;
+      border: none;
+      background: transparent;
+      margin-top: 10px;
+      font-weight: bold;
+      margin-bottom: 50px; }
+    #price .price .details .grayBorder {
+      border: 1px solid #B6B6B6;
+      border-radius: 3px; }
+    #price .price .details .blueBorder {
+      border: 1px solid #1AC6FF;
+      border-radius: 3px;
+      transition: background 300ms, color 300ms,border 300ms; }
+      #price .price .details .blueBorder:hover {
+        background: white;
+        color: #1AC6FF;
+        border: 1px solid white; }
+
+#award h1 {
+  font-weight: 300;
+  margin-top: 80px;
+  margin-right: 45px;
+  font-size: 45px; }
+  #award h1 span {
+    color: #22C8FF; }
+#award p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 45px; }
+#award img {
+  margin-left: 60px;
+  margin-top: 60px; }
+
+#feedback h1 {
+  font-weight: 300;
+  padding-top: 50px;
+  margin-right: 45px;
+  font-size: 45px;
+  color: white; }
+  #feedback h1 span {
+    color: #22C8FF; }
+#feedback p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 45px;
+  color: white; }
+#feedback .transparent img {
+  display: block;
+  position: absolute;
+  top: 50%; }
+#feedback .transparent img:last-child {
+  left: 1170px;
+  top: 50%; }
+
+#clients .profile {
+  margin-top: 40px; }
+  #clients .profile img {
+    border-radius: 100%; }
+  #clients .profile p {
+    display: inline-block;
+    padding-left: 15px;
+    position: relative;
+    top: 10px; }
+    #clients .profile p span {
+      color: #3CCEFF; }
+
+#team h1 {
+  font-weight: 300;
+  margin-top: 80px;
+  margin-right: 45px;
+  font-size: 45px; }
+  #team h1 span {
+    color: #22C8FF; }
+#team .text {
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 45px; }
+#team img {
+  display: inline-block;
+  margin-top: 70px;
+  outline-width: 100%; }
+#team .col-md-3 {
+  text-align: center; }
+#team .name {
+  font-size: 16px;
+  color: #1AC6FF;
+  margin-top: 20px; }
+#team .profession {
+  margin-top: -10px; }
+
+#startup i {
+  font-size: 60px;
+  margin-top: 35px;
+  color: white; }
+#startup h2 {
+  color: white;
+  font-size: 45px;
+  font-weight: 300;
+  margin-top: 30px; }
+#startup p {
+  color: white;
+  margin-left: 67px;
+  margin-top: -10px; }
+#startup button {
+  width: 185px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: transparent;
+  color: white;
+  float: right;
+  margin-top: -60px;
+  transition: background 300ms, color 300ms; }
+  #startup button:hover {
+    background: white;
+    color: #4FD3FF; }
+
+#footer img {
+  height: 30px; }
+#footer p {
+  line-height: 1.5;
+  color: white;
+  font-size: 16px; }
+#footer h4 {
+  color: white;
+  text-shadow: 1px 1px 1px; }
+#footer .footerDiv {
+  margin-top: 95px; }
+#footer .network i {
+  width: 50px;
+  font-size: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #1AC6FF; }
+  #footer .network i:hover {
+    color: #33ADEC;
+    cursor: pointer; }
+#footer .contact i, #footer .contact span {
+  font-size: 15px; }
+#footer .contact i {
+  color: #38B7EA;
+  padding-right: 10px;
+  text-align: left;
+  font-size: 20px; }
+#footer .contact span {
+  color: white;
+  padding-left: 10px; }
+#footer .contact span:nth-child(3) {
+  color: #38B7EA; }
+#footer .contact .addressSecond {
+  padding-left: 35px; }
+#footer h5 {
+  color: #C6C2DF;
+  margin-top: 50px; }
+
+#menu {
+  min-height: 75px; }
+
+#header {
+  min-height: 580px; }
+
+#logo {
+  min-height: 127px;
+  background: #F0F0F0; }
+
+#forEveryStartup {
+  min-height: 553px;
+  background: white;
+  border-bottom: 1px solid #F0F0F0; }
+
+#technology {
+  min-height: 486px;
+  background: white;
+  border-bottom: 1px solid #F0F0F0; }
+
+#helmet {
+  min-height: 510px;
+  background: white;
+  border-bottom: 1px solid #F0F0F0; }
+
+#comp {
+  min-height: 505px;
+  background: #F0F0F0; }
+
+#feature {
+  min-height: 548px;
+  background: white; }
+
+#updates {
+  min-height: 132px; }
+
+#price {
+  min-height: 882px;
+  background: white; }
+
+#award {
+  min-height: 363px;
+  background: white; }
+
+#feedback .transparent {
+  min-height: 255px;
+  background: transparent; }
+
+#clients {
+  min-height: 145;
+  background: white; }
+  #clients .container {
+    border-bottom: 1px solid #E9E9E9;
+    padding-bottom: 20px; }
+
+#team {
+  min-height: 797px;
+  background: white; }
+
+#startup {
+  min-height: 142px;
+  background: #1AC6FF; }
+
+#footer {
+  min-height: 415px; }
+
+/*# sourceMappingURL=style.css.map */

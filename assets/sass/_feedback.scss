@@ -1,0 +1,46 @@
+#feedback{
+	h1{
+		font-weight: 300;
+		padding-top: 50px;
+		margin-right: 45px;
+		font-size: 45px;
+		color:white;
+		span{
+			color:#22C8FF;
+		}
+	}
+	p{
+		font-weight: 400;
+		font-size:16px;
+		margin-right: 45px;
+		color:white;
+	}
+	.transparent{
+		img{
+			display: block;
+			position: absolute;
+			top:50%;
+		}
+		img:last-child{
+			left:1170px;
+			top:50%;
+		}
+	}
+}
+#clients{
+	.profile{
+		margin-top: 40px;
+		img{
+			border-radius: 100%;
+		}
+		p{
+			display: inline-block;
+			padding-left:15px;
+			position:relative;
+			top:10px;
+			span{
+				color:#3CCEFF;
+			}
+		}
+	}
+}

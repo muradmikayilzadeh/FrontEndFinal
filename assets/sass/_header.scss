@@ -1,0 +1,40 @@
+#header{
+	h1{
+		color:white;
+		font-weight:300;
+		font-size:58px;
+		padding-top:160px;
+		span{
+			color:skyblue;
+		}
+	}
+	h5{
+		font-size:24px;
+		color:white;
+		font-weight:300;
+	}
+	button{
+		border:none;
+		border-radius:3px;
+		margin-top:30px;
+	}
+	button:nth-child(3){
+		color:white;
+		background:skyblue;
+		padding:17px 50px;
+		min-width:144px;
+	}
+	button:last-child{
+		padding:15px 25px;
+		color:white;
+		border:1px solid white;
+		background:none;
+		margin-left:10px;
+		font-weight:500;
+		transition:background 500ms,color 500ms;
+		&:hover{
+			background:white;
+			color:skyblue;
+		}
+	}
+}

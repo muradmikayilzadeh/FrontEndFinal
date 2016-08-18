@@ -1,0 +1,33 @@
+#comp{
+	ul{
+		margin-top: 115px;
+	}
+	li{
+		height: 140px;
+		list-style-type: none;
+		border-radius: 3px;
+		p:first-child{
+			font-size: 20px;
+			color:#1AC6FF;
+			font-weight: bold;
+			padding-top: 30px;
+		}
+		p{
+			padding-left:20px;
+		}
+	}
+	li:first-child{
+		background: #1AC6FF;
+		p:first-child{
+			color:white;
+		}
+		p:last-child{
+			color:white;
+		}
+	}
+	img{
+		margin-top: 100px;
+		margin-left: -100px;
+		display: inline-block;
+	}
+}
