@@ -1,41 +1,143 @@
-.navbar{
-	background:transparent;
-	border:none;
-	li{
-		line-height: 45px;
-		margin-top: 20px;
-		display: inline-block;
-		color:lightgray;
-		text-transform: uppercase;
-		margin-left: 25px;
-		&:hover{
-			color:skyblue;
-			cursor:pointer;
-		}
-	}
-	li:nth-child(2){
-		border-bottom:3px solid skyblue;
-		color:skyblue;
-	}
-	li:last-child{
-		border:1px solid skyblue;
-		padding:0 20px;
-		border-radius:2px;
-		line-height: 35px;
-		float: right;
-		margin-right: 65px;
-		color:skyblue;
-		transition:background 900ms,color 900ms;
-		&:hover{
-			color:white;
-			background:skyblue;
-		}
-	}
-	img{
-		height: 30px;
-		margin-top: -5px;
-	}
-	li:nth-child(10){
-		margin-left: 200px;
-	}
-}
+$mainColor:#1AC6FF;
+   .nav{
+
+      .SecondUL{
+         position: absolute;
+         left: 159px;
+         top: -3px;
+      }
+      .ThirdUl{
+         position: absolute;
+         left: 159px;
+         top: -3px;
+      }
+      .FourthUl{
+         position: absolute;
+         left: 159px;
+         top: -2px;
+      }
+   }
+   .FirstNav{
+      border: none;
+      background: transparent;
+      min-height: 75px;
+      .MyLogo{
+         width: 150px;
+         height: 32px;
+         background: url("../images/logo.png") no-repeat;
+         background-size: contain;
+         margin-top: 20px;
+      }
+      li{
+         margin: 12px 0px;
+         ul{
+            background: #272727;
+            padding: 0;
+            li{
+               padding: 0;
+               margin: 0;
+               a{
+                  color: #ffffff;
+                  padding: 10px 0px 10px 15px;
+                  margin: 0;
+               }
+               a:hover{
+                  background: #1a192b;
+                  transition: all .3s ease;
+               }
+            }
+         }
+         a{
+            color: #CDCCDE;
+            text-transform: uppercase;
+            font-weight: 300;
+            &:hover{
+               color: #1AC3FD;
+            }
+         }
+      }
+      .lastLi{
+         border: 1px solid #1AC3FD;
+         margin: 21px 0px;
+         a{
+            padding: 6px 12px;
+         }
+         a:hover{
+            background: #1AC3FD;
+            color: #ffffff;
+            transition: all .3s ease;
+         }
+      }
+      // ACTIVE CLASS
+      .MyActive{
+         background: transparent;
+         border-bottom: 2px solid #1AC3FD;
+         a{
+            color: #1AC3FD;
+            text-transform: uppercase;
+         }
+      }
+   }
+   .SecondNav{
+      border: none;
+      width: 100%;
+      min-height: 75px;
+      z-index: 1;
+      position: fixed;
+      .MyLogo{
+         width: 150px;
+         height: 32px;
+         background: url("../images/logo2.png") no-repeat;
+         background-size: contain;
+         margin-top: 20px;
+      }
+      li{
+         margin: 12px 0px;
+         ul{
+            background: #272727;
+            padding: 0;
+            li{
+               padding: 0;
+               margin: 0;
+               a{
+                  color: #ffffff;
+                  padding: 10px 0px 10px 15px;
+                  margin: 0;
+               }
+               a:hover{
+                  background: #1a192b;
+                  transition: all .3s ease;
+               }
+            }
+         }
+         a{
+            color:black;
+            text-transform: uppercase;
+            font-weight: 300;
+            &:hover{
+               color: #1AC3FD;
+            }
+         }
+      }
+
+      .MyActive{
+         background: transparent;
+         border-bottom: 2px solid #1AC3FD;
+         a{
+            color: #1AC3FD;
+            text-transform: uppercase;
+         }
+      }
+      .lastLi{
+         border: 1px solid #1AC3FD;
+         margin: 21px 0px;
+         a{
+            padding: 6px 12px;
+         }
+         a:hover{
+            background: #1AC3FD;
+            color: #ffffff;
+            transition: all .3s ease;
+         }
+      }
+   }

@@ -2,7 +2,6 @@
 	h1{
 		font-weight: 300;
 		margin-top: 80px;
-		margin-right: 45px;
 		font-size: 45px;
 		span{
 			color:#22C8FF;
@@ -11,12 +10,10 @@
 	.text{
 		font-weight: 400;
 		font-size:16px;
-		margin-right: 45px;
 	}
 	img{
 		display: inline-block;
 		margin-top: 70px;
-		outline-width: 100%;
 	}
 	.col-md-3{
 		text-align: center;
@@ -28,5 +25,13 @@
 	}
 	.profession{
 		margin-top: -10px;
+	}
+}
+@media (max-width:800px){
+	#team{
+		h1{
+			font-size:27px;
+		}
+
 	}
 }

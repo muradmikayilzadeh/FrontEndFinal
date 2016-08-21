@@ -1,8 +1,12 @@
 #price{
+	overflow:hidden;
+	.container{
+		transition: all .5s ease;
+		transform: translateY(1000px);
+	}
 	h1{
 		font-weight: 300;
 		margin-top: 80px;
-		margin-right: 45px;
 		font-size: 45px;
 		span{
 			color:#22C8FF;
@@ -11,7 +15,6 @@
 	p{
 		font-weight: 400;
 		font-size:16px;
-		margin-right: 45px;
 	}
 // ----------------------PRICE----------------------
 
@@ -86,5 +89,17 @@
 				}
 			}
 			
+	}
+}
+@media (max-width:800px){
+	#price{
+		h1{
+			font-size:27px;
+		}
+		.price{
+			.blueBorder,.grayBorder{
+				width:100%;
+			}
+		}
 	}
 }

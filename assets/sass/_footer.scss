@@ -53,3 +53,13 @@
 		margin-top: 50px;
 	}
 }
+@media (max-width:800px){
+	#footer{
+		.network{
+			i{
+				font-size:34px;
+				float: left;
+			}
+		}
+	}
+}

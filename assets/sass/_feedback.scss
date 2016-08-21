@@ -1,8 +1,12 @@
 #feedback{
+	overflow:hidden;
+	.container{
+		transition:all .5s ease;
+		transform: translateY(-500px);
+	}
 	h1{
 		font-weight: 300;
 		padding-top: 50px;
-		margin-right: 45px;
 		font-size: 45px;
 		color:white;
 		span{
@@ -12,22 +16,15 @@
 	p{
 		font-weight: 400;
 		font-size:16px;
-		margin-right: 45px;
 		color:white;
-	}
-	.transparent{
-		img{
-			display: block;
-			position: absolute;
-			top:50%;
-		}
-		img:last-child{
-			left:1170px;
-			top:50%;
-		}
 	}
 }
 #clients{
+	overflow:hidden;
+	.container{
+		transition:all .3s ease;
+		transform:translateY(-300px);
+	}
 	.profile{
 		margin-top: 40px;
 		img{
@@ -40,6 +37,22 @@
 			top:10px;
 			span{
 				color:#3CCEFF;
+			}
+		}
+	}
+}
+@media (max-width:800px){
+	#feedback{
+		h1{
+			font-size:27px;
+		}
+		p{
+			font-size:17px;
+		}
+		.transparent{
+			img:last-child{
+				bottom:30px;
+				right:0;
 			}
 		}
 	}

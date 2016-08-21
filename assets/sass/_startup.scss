@@ -12,7 +12,6 @@
 	}
 	p{
 		color:white;
-		margin-left: 67px;
 		margin-top: -10px;
 	}
 	button{
@@ -30,4 +29,19 @@
 			color:#4FD3FF;
 		}
 	}
+}
+@media (max-width:800px){
+	#startup{
+		text-align:center;
+		h2{
+			font-size:36px;
+		}
+		button{
+			margin-top: 0;
+			float: none;
+			margin-bottom: 35px;
+			margin-top: 15px;
+		}
+	}
+	
 }

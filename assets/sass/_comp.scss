@@ -28,6 +28,35 @@
 	img{
 		margin-top: 100px;
 		margin-left: -100px;
-		display: inline-block;
+		
+		transform:perspective(1300px) rotateX(-90deg);
+		transform-style: preserve-3d;
+		transition: all .9s ease;
+	}
+}
+@media (max-width:800px){
+	#comp{
+		li{
+			width:100%;
+			p:first-child{
+				font-size:15px;
+			}
+			p:last-child{
+				font-size: 14px;
+			}
+		}
+		ul{
+			margin-top: 0;
+		}
+		img{
+			float: right;
+			padding-bottom:50px;
+		}
+		.text{
+			float: left;
+		}
+		img{
+			float: right;
+		}
 	}
 }
