@@ -5,9 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<link rel="stylesheet" href="assets/vendor/bootstrap.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="assets/vendor/jquery.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="assets/vendor/fonts/line-icons.woff">
 		<link rel="stylesheet" href="assets/vendor/css/font-awesome.css">
 		<link rel="stylesheet" href="assets/vendor/css/font-lineicons.css">
@@ -23,7 +21,7 @@
 						<nav class="navbar navbar-default FirstNav">
 						<div class="container">
 							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<button type="button" class="navbar-toggle collapsed hidden-md hidden-lg" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
@@ -36,7 +34,7 @@
 									<li class="MyActive"><a href="#home">home <span class="sr-only">(current)</span></a></li>
 									<li class="about"><a href="#forEveryStartup">about</a></li>
 									<li class="features"><a href="#comp">features</a></li>
-									<li class="prices"><a href="#prices">prices</a></li>
+									<li class="prices"><a href="#price">prices</a></li>
 									<li class="feedback"><a href="#feedback">feedback</a></li>
 									<li class="team"><a href="#team">team</a></li>
 									<li class="contact"><a href="#startup">contact</a></li>
@@ -116,9 +114,9 @@
 				<section id="forEveryStartup" class="col-md-12 col-xs-12 col-sm-12 col-lg-12 text-center">
 					<div class="container">
 						<div class="row col-md-12">
-							<div class="tab">FIRST TAB</div>
-							<div class="tab">SECOND TAB</div>
-							<div class="tab">THIRD TAB</div>
+							<div class="tab firstTab active">FIRST TAB</div>
+							<div class="tab secondTab">SECOND TAB</div>
+							<div class="tab thirdTab">THIRD TAB</div>
 						</div>
 						<div class="row second">
 							<div class="img col-md-6 col-xs-12 col-sm-12">
@@ -131,6 +129,25 @@
 								<button>GET TEMPLATE</button>
 								<button>SEE ELEMENTS</button>
 							</div>
+						</div>
+						<div class="row third text-center">
+							<h1 class="text-center">3 EASY STEPS</h1>
+							<p class="text-center thirdP">Lorem ipsum dolor sit atmet sit dolor greand fdanrh s <br> dfs sit atmet sit dolor greand fdanrh sdfs</p>
+								<div class="col-md-4 text-center">
+									<i class="icon icon-shopping-04"></i>
+									<p><b>PLACE ORDER</b></p>
+									<p>Sit amet, consectetur adipiscing elit. <br> In hac divisione rem ipsam prorsus probo <br>elegantiam desidero.</p>
+								</div>
+								<div class="col-md-4 text-center">
+									<i class="icon icon-seo-icons-03"></i>
+									<p><b>OUR SYSTEM RUNS</b></p>
+									<p>Sit amet, consectetur adipiscing elit. <br> In hac divisione rem ipsam prorsus probo <br>elegantiam desidero.</p>
+								</div>
+								<div class="col-md-4 text-center">
+									<i class="icon icon-seo-icons-05"></i>
+									<p><b>RECEIVE REPORT</b></p>
+									<p>Sit amet, consectetur adipiscing elit. <br> In hac divisione rem ipsam prorsus probo <br>elegantiam desidero.</p>
+								</div>
 						</div>
 					</div>
 				</section>
@@ -157,20 +174,22 @@
 				<section id="comp" class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
 					<div class="container">
 						<ul class="col-md-4">
-							<li>
+							<li class="first active">
 								<p>LOREM DOLOR</p>
 								<p>Sit amet, consectetuar adipiscing elit <br> hac divisione rem ipsam prorsus</p>
 							</li>
-							<li>
+							<li class="second">
 								<p>LOREM DOLOR</p>
 								<p>Sit amet, consectetuar adipiscing elit <br> hac divisione rem ipsam prorsus</p>
 							</li>
-							<li>
+							<li class="third">
 								<p>LOREM DOLOR</p>
 								<p>Sit amet, consectetuar adipiscing elit <br> hac divisione rem ipsam prorsus</p>
 							</li>
 						</ul>
-						<img src="assets/images/mac.png" class="col-md-8 col-xs-12 col-sm-12">
+						<img src="assets/images/mac.png" class="col-md-8 col-xs-12 col-sm-12 mac">
+						<img src="assets/images/tablet.png" class="col-md-8 col-xs-12 col-sm-12 tablet">
+						<img src="assets/images/pc.png" class="col-md-8 col-xs-12 col-sm-12 pc">
 					</div>
 				</section>
 				<section id="feature" class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
@@ -260,59 +279,65 @@
 						<p class="text-center">Lorem ipsum dolor sit atmet sit dolor greand fdanrh s <br> dfs sit atmet sit dolor greand fdanrh sdfs</p>
 						
 						<div class="price col-md-4 col-xs-12 col-sm-12">
-							<div class="heading col-md-12 col-sm-12 col-xs-12">INVIDUAL</div>
-							<div class="text-center cost">
-								<span class="currency">$</span>
-								19
-								<span class="period">PER MONTH</span>
-							</div>
-							<div class="details col-md-12 text-center">
-								<div class="row">
-									<ul>
-										<li>Free Domain</li>
-										<li><b>Unlimited</b> Websites</li>
-										<li><b>Unlimited</b> Bandwidth</li>
-										<li><b>Unlimited</b> Disk Space</li>
-									</ul>
-									<button class="grayBorder">GET STARTED</button>
+							<div class="row">
+								<div class="heading col-md-12 col-sm-12 col-xs-12">INVIDUAL</div>
+								<div class="text-center cost">
+									<span class="currency">$</span>
+									19
+									<span class="period">PER MONTH</span>
+								</div>
+								<div class="details col-md-12 text-center">
+									<div class="row">
+										<ul>
+											<li>Free Domain</li>
+											<li><b>Unlimited</b> Websites</li>
+											<li><b>Unlimited</b> Bandwidth</li>
+											<li><b>Unlimited</b> Disk Space</li>
+										</ul>
+										<button class="grayBorder">GET STARTED</button>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="price col-md-4 col-xs-12 col-sm-12">
-							<div class="heading col-md-12 col-sm-12 col-xs-12">STUDIO</div>
-							<div class="blue text-center cost">
-								<span class="currency">$</span>
-								29
-								<span class="period">SUBSCRIPTION</span>
-							</div>
-							<div class="details col-md-12 text-center">
-								<div class="row">
-									<ul>
-										<li>Free Domain</li>
-										<li><b>Unlimited</b> Websites</li>
-										<li><b>Unlimited</b> Bandwidth</li>
-										<li><b>Unlimited</b> Disk Space</li>
-									</ul>
-									<button class="blueBorder">GET STARTED</button>
+							<div class="row willBeBlue">
+								<div class="heading col-md-12 col-sm-12 col-xs-12">STUDIO</div>
+								<div class="blue text-center cost">
+									<span class="currency">$</span>
+									29
+									<span class="period">SUBSCRIPTION</span>
+								</div>
+								<div class="details col-md-12 text-center">
+									<div class="row">
+										<ul>
+											<li>Free Domain</li>
+											<li><b>Unlimited</b> Websites</li>
+											<li><b>Unlimited</b> Bandwidth</li>
+											<li><b>Unlimited</b> Disk Space</li>
+										</ul>
+										<button class="blueBorder">GET STARTED</button>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="price col-md-4 col-xs-12 col-sm-12">
-							<div class="heading col-md-12 col-sm-12 col-xs-12">ENTERPRISE</div>
-							<div class="blue text-center cost">
-								<span class="currency">$</span>
-								49
-								<span class="period">PER MONTH</span>
-							</div>
-							<div class="details col-md-12 text-center">
-								<div class="row">
-									<ul>
-										<li>Free Domain</li>
-										<li><b>Unlimited</b> Websites</li>
-										<li><b>Unlimited</b> Bandwidth</li>
-										<li><b>Unlimited</b> Disk Space</li>
-									</ul>
-									<button class="blueBorder">GET STARTED</button>
+							<div class="row willBeBlue">
+								<div class="heading col-md-12 col-sm-12 col-xs-12">ENTERPRISE</div>
+								<div class="blue text-center cost">
+									<span class="currency">$</span>
+									49
+									<span class="period">PER MONTH</span>
+								</div>
+								<div class="details col-md-12 text-center">
+									<div class="row">
+										<ul>
+											<li>Free Domain</li>
+											<li><b>Unlimited</b> Websites</li>
+											<li><b>Unlimited</b> Bandwidth</li>
+											<li><b>Unlimited</b> Disk Space</li>
+										</ul>
+										<button class="blueBorder">GET STARTED</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -332,27 +357,30 @@
 					<div class="container text-center">
 						<div class="transparent">
 							<h1>WHAT <span>CLIENTS</span> SAY</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel <br> rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi <br> mauris, nec rhoncus dolor consectetur vitae lorem ipsum.</p>
+							<p class="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel <br> rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi <br> mauris, nec rhoncus dolor consectetur vitae lorem ipsum.</p>
+							<p class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel <br> rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi <br> mauris, nec rhoncus dolor consectetur vitae lorem ipsum.</p>
+							<p class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel <br> rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi <br> mauris, nec rhoncus dolor consectetur vitae lorem ipsum.</p>
+
 						</div>
 						
 					</div>
 				</section>
 				<section id="clients" class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
-					<div class="container tex-center">
+					<div class="container text-center">
 						<div class="clients">
-							<div class="profile col-md-4 col-sm-12 col-xs-12">
+							<div class="profile col-md-4 col-sm-12 col-xs-12 first">
 								<div class="row">
 									<img src="assets/images/profile-1.jpg" alt="">
 									<p><b><span>AMY WARNER</span> <br> Investor at <span>Pear Inc.</span></b></p>
 								</div>
 							</div>
-							<div class="profile col-md-4 col-sm-12 col-xs-12">
+							<div class="profile col-md-4 col-sm-12 col-xs-12 second">
 								<div class="row">
 									<img src="assets/images/profile-2.jpg" alt="">
 									<p><b><span>JOHN DOESOME</span> <br> Accountant at <span>Vell Inc.</span></b></p>
 								</div>
 							</div>
-							<div class="profile col-md-4 col-sm-12 col-xs-12">
+							<div class="profile col-md-4 col-sm-12 col-xs-12 third">
 								<div class="row">
 									<img src="assets/images/profile-1.jpg" alt="">
 									<p><b><span>PETER MOOSOME</span> <br> VP Marketing at <span>Footbook</span></b></p>
@@ -370,6 +398,14 @@
 							<div class="col-md-3">
 								<div class="row">
 									<img src="assets/images/mike.jpg" alt="">
+									<div class="text2 text-center">
+										<p>Mike has worked with CARE USA, for 12 <br> years holding positions such as Deputy <br> Country Director to Director of Programs <br> and Information Systems.</p>
+										<i class="fa fa-envelope"></i>
+										<i class="fa fa-twitter"></i>
+										<i class="fa fa-facebook"></i>
+										<i class="fa fa-skype"></i>
+										<i class="fa fa-linkedin"></i>
+									</div>
 									<p class="name"><b>MIKE BOLDER</b></p>
 									<p class="profession">Developer</p>
 								</div>
@@ -377,6 +413,10 @@
 							<div class="col-md-3">
 								<div class="row">
 									<img src="assets/images/second.jpg" alt="">
+									<div class="text2 text-center">
+										<p>Mike has worked with CARE USA, for 12 <br> years holding positions such as Deputy <br> Country Director to Director of Programs <br> and Information Systems.</p>
+										<i class="fa fa-skype"></i>
+									</div>
 									<p class="name"><b>MIKE BOLDER</b></p>
 									<p class="profession">Developer</p>
 								</div>
@@ -384,6 +424,11 @@
 							<div class="col-md-3">
 								<div class="row">
 									<img src="assets/images/third.jpg" alt="">
+									<div class="text2 text-center special">
+										<p>Ellen has over 13 years of <br> experience in development projects <br> as a senior consultant and project <br> manager in the areas of project management, fund and board <br> development, strategic & financial <br> planning, monitoring & evaluation.</p>
+										<i class="fa fa-envelope"></i>
+										<i class="fa fa-twitter"></i>
+									</div>
 									<p class="name"><b>MIKE BOLDER</b></p>
 									<p class="profession">Developer</p>
 								</div>
@@ -391,6 +436,13 @@
 							<div class="col-md-3">
 								<div class="row">
 									<img src="assets/images/fourth.jpg" alt="">
+									<div class="text2 text-center special2">
+										<p>Mike has worked with CARE USA for <br> 12 years.</p>
+										<i class="fa fa-envelope"></i>
+										<i class="fa fa-twitter"></i>
+										<i class="fa fa-facebook"></i>
+										<i class="fa fa-skype"></i>
+									</div>
 									<p class="name"><b>MIKE BOLDER</b></p>
 									<p class="profession">Developer</p>
 								</div>

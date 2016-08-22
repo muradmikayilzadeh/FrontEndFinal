@@ -24,7 +24,7 @@ $(document).ready(function($) {
       }
       // --------------------COMP--------------------
         if (distance>1998) {
-         $('#comp img').css({transform:"perspective(1300px) rotateX(0deg)"});
+         $('#comp .mac').css({transform:"perspective(1300px) rotateX(0deg)"});
       }
       // --------------------FEATURE(FIRST)--------------------
         if (distance>2609) {
@@ -55,18 +55,13 @@ $(document).ready(function($) {
         if (distance>4714) {
          $('#clients .container').css({transform:"translateY(0)"});
       }
-   });
+      // --------------------TEAM--------------------
+        if (distance>5327) {
+         $('#team .col-md-3').css({transform:"translateY(0)"});
+      }
 
 
-// MENU
-   $("#menu li").on("click",function() {
-      $("li").removeClass("MyActive");
-      $(this).addClass("MyActive");
-   })
-
-   $(window).scroll(function(event) {
-      var Myscroll = $(window).scrollTop();
-      if (Myscroll>600) {
+      if (distance>600) {
          $("nav").removeClass("FirstNav");
          $("nav").addClass("SecondNav");
       }else {
@@ -74,33 +69,39 @@ $(document).ready(function($) {
          $("nav").addClass("FirstNav");
       }
 
-       if (Myscroll>580 && Myscroll<2331) {
+       if (distance>580 && distance<2331) {
          $("#menu ul li").removeClass('MyActive');
          $("#menu .about").addClass('MyActive');
       }
-      if (Myscroll>2331 && Myscroll<3424) {
+      if (distance>2331 && distance<3424) {
          $("#menu ul li").removeClass('MyActive');
          $("#menu .features").addClass('MyActive');
       }
-      if (Myscroll>3424 && Myscroll<3712) {
+      if (distance>3424 && distance<3712) {
          $("#menu ul li").removeClass('MyActive');
          $("#menu .prices").addClass('MyActive');
       }
-      if (Myscroll>3712 && Myscroll<4847) {
+      if (distance>3712 && distance<4847) {
          $("#menu ul li").removeClass('MyActive');
          $("#menu .feedback").addClass('MyActive');
       }
-      if (Myscroll>4847 && Myscroll<5893) {
+      if (distance>4847 && distance<5893) {
          $("#menu ul li").removeClass('MyActive');
          $("#menu .team").addClass('MyActive');
       }
-      if (Myscroll>5893) {
+      if (distance>5893) {
          $("#menu ul li").removeClass('MyActive');
          $("#menu .contact").addClass('MyActive');
       }
-
    });
-   // =================NAVBAR HOVER DROPDOWN====================================
+
+
+// MENU
+   $("#menu li").on("click",function() {
+      $("li").removeClass("MyActive");
+      $(this).addClass("MyActive");
+   })    
+// =================NAVBAR HOVER DROPDOWN====================================
    $('ul .nav li.dropdown').hover(function() {
       $(this).find('.FirstUl').stop(true, true).slideDown(300);
    }, function() {
@@ -125,9 +126,102 @@ $(document).ready(function($) {
       $(this).find('.FourthUl').stop(true, true).slideUp(300);
    });
 
-
+// =====================FOR EVERY STARTUP=====================
+$(".tab")
+.on('click',function(event) {
+   $(".tab").removeClass('active');
+   $(this).addClass('active');
 });
 
+$(".firstTab")
+.on('click',function(event) {
+   $("#forEveryStartup img").attr('src', 'assets/images/people.jpg');
+   $("#forEveryStartup .text h1").text('FOR EVERY STARTUP');
+   $("#forEveryStartup button").add();
+});
+
+$(".secondTab")
+.on('click',function(event) {
+   $("#forEveryStartup img").attr('src', 'assets/images/phone.jpg');
+   $("#forEveryStartup .text h1").text('NEW AGE TECHNOLOGY');
+   $("#forEveryStartup button").remove();
+});
+$(".thirdTab")
+.on('click',function(event) {
+   $("#forEveryStartup img,#forEveryStartup .text").hide();
+   $("#forEveryStartup .third").css({display:"inline-block",transform: 'translateY(0px)'});
+});
+
+
+// =====================COMP=====================
+   $("#comp .first")
+      .on('click', function(event) {
+         $("#comp li").removeClass('active')
+         $(this).addClass('active')
+         $("#comp img").css('display', 'none');
+         $("#comp .mac").css({
+            display: 'block',
+            transform: 'perspective(1300px) rotateX(0deg)'
+         });
+      });
+
+   $("#comp .second")
+      .on('click', function(event) {
+         $("#comp li").removeClass('active')
+         $(this).addClass('active')
+         $("#comp img").css('display', 'none');
+         $("#comp .tablet").css('display', 'block');
+         $("#comp .tablet").animate({transform:"rotateX(90deg)"}, 400);
+      });
+
+   $("#comp .third")
+      .on('click', function(event) {
+         $("#comp li").removeClass('active')
+         $(this).addClass('active')
+         $("#comp img").css('display', 'none');
+         $("#comp .pc").css('display', 'block');;
+      });
+
+      
+// =====================CLIENTS=====================
+   $("#clients .profile").css({borderBottom:'1px solid #E9E9E9'});
+   $("#clients .profile")
+   .on('click', function(event) {
+      $("#clients .profile").css('borderBottom', '1px solid #E9E9E9');
+      $("#clients .profile").find('p,span').css('color', '#E9E9E9');
+      $(this).css('borderBottom','1px solid #1AC6FF');
+      $(this).find('p').css('color','#333');
+      $(this).find('span').css('color','#3CCEFF');
+   });
+   $("#clients .first")
+   .on('click',function(event) {
+      $("#feedback .text1").css('transform', 'translateX(0px)');
+      $("#feedback .text2").css('transform', 'translateX(1300px)');
+      $("#feedback .text3").css('transform', 'translateX(1300px)');
+   });
+   $("#clients .second")
+   .on('click',function(event) {
+      $("#feedback .text1").css('transform', 'translateX(-1300px)');
+      $("#feedback .text2").css('transform', 'translateX(0px)');
+      $("#feedback .text3").css('transform', 'translateX(1300px)');
+   });
+   $("#clients .third")
+   .on('click',function(event) {
+      $("#feedback .text2").css('transform', 'translateX(-1300px)');
+      $("#feedback .text3").css('transform', 'translateX(0px)');
+      $("#feedback .text1").css('transform', 'translateX(1300px)');
+   });
+
+// =====================TEAM=====================
+$("#team .col-md-3")
+.on('mouseover',function(event) {
+   $(this).find('.text2').css('display', 'block');
+});
+$("#team .col-md-3")
+.on('mouseleave',function(event) {
+   $(this).find('.text2').css('display', 'none');
+});
+});
 
 
 

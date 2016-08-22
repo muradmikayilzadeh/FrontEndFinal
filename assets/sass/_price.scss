@@ -21,9 +21,27 @@
 	.price{
 		text-align: center;
 		margin-top: 50px;
+		display: inline-block;
+		width:31%;
+		margin-left: 20px;
+		&:hover{
+			.willBeBlue{
+				background:#1AC6FF;
+				transition: all .3s ease;
+				.heading,.cost,.currency,.period,.details{
+					color:white;
+					background:#1AC6FF;
+					button{
+						border:1px solid white;
+					}
+					li{
+						border-bottom:1px solid white;
+					}
+				}
+			}
+		}
 		.heading{
 				height: 60px;
-				background:#F8F8F8;
 				background:#F8F8F8;
 				font-size: 25px;
 				padding-top: 10px;
@@ -38,16 +56,19 @@
 				.currency{
 					font-size: 47px;
 					position: relative;
-					top:-40px;				
+					top:-40px;	
+			
 				}
 				.period{
 					font-size: 15px;
 					display: block;
 					margin-top: -20px;
+
 				}
 			}
 			.blue{
 					color:#1AC6FF;
+
 				}
 			.details{
 				background:#F8F8F8;
@@ -88,6 +109,12 @@
 					}
 				}
 			}
+			.col-md-4{
+				.row{
+					padding-right:15px;
+					padding-left:15px;
+				}
+			}
 			
 	}
 }
@@ -97,6 +124,8 @@
 			font-size:27px;
 		}
 		.price{
+			width:100%;
+			margin-left: 0;
 			.blueBorder,.grayBorder{
 				width:100%;
 			}

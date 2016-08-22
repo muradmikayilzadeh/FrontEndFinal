@@ -1,4 +1,8 @@
 $mainColor:#1AC6FF;
+// MENU
+a{
+   color:white;
+}
    .nav{
 
       .SecondUL{
@@ -37,22 +41,22 @@ $mainColor:#1AC6FF;
                padding: 0;
                margin: 0;
                a{
-                  color: #ffffff;
+                  color: #ffffff !important;
                   padding: 10px 0px 10px 15px;
                   margin: 0;
                }
                a:hover{
-                  background: #1a192b;
+                  background: #1a192b ;
                   transition: all .3s ease;
                }
             }
          }
          a{
-            color: #CDCCDE;
+            color: #CDCCDE !important;
             text-transform: uppercase;
             font-weight: 300;
             &:hover{
-               color: #1AC3FD;
+               color: #1AC3FD !important;
             }
          }
       }
@@ -63,8 +67,8 @@ $mainColor:#1AC6FF;
             padding: 6px 12px;
          }
          a:hover{
-            background: #1AC3FD;
-            color: #ffffff;
+            background: #1AC3FD !important;
+            color: #ffffff !important;
             transition: all .3s ease;
          }
       }
@@ -73,7 +77,7 @@ $mainColor:#1AC6FF;
          background: transparent;
          border-bottom: 2px solid #1AC3FD;
          a{
-            color: #1AC3FD;
+            color: #1AC3FD !important;
             text-transform: uppercase;
          }
       }
@@ -100,13 +104,14 @@ $mainColor:#1AC6FF;
                padding: 0;
                margin: 0;
                a{
-                  color: #ffffff;
+                  color: #ffffff !important;
                   padding: 10px 0px 10px 15px;
                   margin: 0;
                }
                a:hover{
-                  background: #1a192b;
+                  background: #1a192b !important;
                   transition: all .3s ease;
+                  color:white !important;
                }
             }
          }
@@ -115,7 +120,7 @@ $mainColor:#1AC6FF;
             text-transform: uppercase;
             font-weight: 300;
             &:hover{
-               color: #1AC3FD;
+               color: #1AC3FD !important;
             }
          }
       }
@@ -124,7 +129,7 @@ $mainColor:#1AC6FF;
          background: transparent;
          border-bottom: 2px solid #1AC3FD;
          a{
-            color: #1AC3FD;
+            color: #1AC3FD !important;
             text-transform: uppercase;
          }
       }
@@ -135,9 +140,10 @@ $mainColor:#1AC6FF;
             padding: 6px 12px;
          }
          a:hover{
-            background: #1AC3FD;
+            background: #1AC3FD !important;
             color: #ffffff;
             transition: all .3s ease;
          }
       }
    }
+

@@ -16,22 +16,22 @@
 			padding-left:20px;
 		}
 	}
-	li:first-child{
-		background: #1AC6FF;
-		p:first-child{
-			color:white;
-		}
-		p:last-child{
-			color:white;
-		}
-	}
 	img{
 		margin-top: 100px;
 		margin-left: -100px;
-		
-		transform:perspective(1300px) rotateX(-90deg);
+		display: none;
 		transform-style: preserve-3d;
-		transition: all .9s ease;
+		transition: all .3s ease;
+	}
+	.mac{
+		display: block;
+		transform:perspective(1300px) rotateX(-90deg);
+	}
+	.active{
+		background: #1AC6FF;
+		p{
+			color:white !important;
+		}
 	}
 }
 @media (max-width:800px){

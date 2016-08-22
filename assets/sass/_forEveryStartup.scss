@@ -15,9 +15,10 @@
 			cursor: pointer;
 		}
 	}
-	.tab:first-child{
-		background: #1AC6FF;
-		color:white;
+	.active{
+			background:#1AC6FF;
+			color:white;
+			cursor: pointer;
 	}
 	.second{
 		margin-top: 60px;
@@ -33,6 +34,14 @@
 	.text{
 		transition:all .5s ease;
 		transform:translateX(700px);
+	}
+	.text2{
+		transition:all .5s ease;
+		transform:translateX(-1200px);
+	}
+	.img2{
+		transition:all .5s ease;
+		transform:translateX(1000px);
 	}
 	h1{
 		font-weight: 300;
@@ -61,6 +70,22 @@
 	}
 	button:last-child{
 		margin-left:15px;
+	}
+	.third{
+		display: none;
+		transform:translateY(-2000px);
+		transition:all .4s ease;
+		h1{
+			margin-right: 0;
+		}
+		.thirdP{
+			margin-right: 0;
+		}
+		i{
+			font-size:81px;
+			color:#1AC6FF;
+			margin-left:-50px;
+		}
 	}
 }
 @media (max-width:800px){

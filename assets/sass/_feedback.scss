@@ -17,6 +17,17 @@
 		font-weight: 400;
 		font-size:16px;
 		color:white;
+		transition: all .5s ease;
+	}
+	.text2{
+		transform:translateX(1300px);
+		transition: all .5s ease;
+		margin-top: -75px;
+	}
+	.text3{
+		transform:translateX(1300px);
+		transition: all .5s ease;
+		margin-top: -75px;
 	}
 }
 #clients{
@@ -27,6 +38,17 @@
 	}
 	.profile{
 		margin-top: 40px;
+		padding-bottom:40px;
+		transition: color 900ms;
+		&:hover{
+			cursor:pointer;
+			p{
+				color:#333;
+				span{
+					color:#3CCEFF;
+				}
+			}
+		}
 		img{
 			border-radius: 100%;
 		}
@@ -35,8 +57,9 @@
 			padding-left:15px;
 			position:relative;
 			top:10px;
+			color:#E3E3E3;
 			span{
-				color:#3CCEFF;
+				color:#E3E3E3;
 			}
 		}
 	}
