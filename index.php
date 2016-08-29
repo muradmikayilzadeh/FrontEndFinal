@@ -14,6 +14,9 @@
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
+	<?php 
+		include "admin/config.php";
+	 ?>
 		<div class="container-fluid">
 			<div class="row">
 				<section id="menu" class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
@@ -92,8 +95,8 @@
 				</section>
 				<section id="header" class="col-md-12 col-xs-12 col-sm-12 col-lg-12 text-center">
 					<div class="row">
-						<h1>Do not wait — <span>launch</span> your startup now!</h1>
-						<h5>this tempate is flexible enough to suit any kind of startup or new business</h5>
+						<h1><?php $sql="SELECT value FROM header WHERE id=1";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></h1>
+						<h5><?php $sql="SELECT value FROM header WHERE id=2";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></h5>
 						<button>
 						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 						GET STARTED
@@ -123,9 +126,9 @@
 								<img src="assets/images/people.png" class="img img-responsive">
 							</div>
 							<div class="text col-md-6 col-xs-12 col-sm-12 text-center">
-								<h1>FOR EVERY <span>STARTUP</span></h1>
-								<p>Lorem ipsum dolor sit atmet sit dolor greand fdanrh <br>sdfs sit atmet sit dolor greand fdanrh sdfs</p><br>
-								<p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.</p>
+								<h1><?php $sql="SELECT value FROM header WHERE id=3";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></h1>
+								<p><?php $sql="SELECT value FROM header WHERE id=4";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p><br>
+								<p><?php $sql="SELECT value FROM header WHERE id=5";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 								<button>GET TEMPLATE</button>
 								<button>SEE ELEMENTS</button>
 							</div>
@@ -154,9 +157,9 @@
 				<section id="technology" class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
 					<div class="container">
 						<div class="text col-md-6 col-xs-12 col-sm-12">
-							<h1>NEW AGE <span>TECHNOLOGY</span></h1>
-							<p>Lorem ipsum dolor sit atmet sit dolor greand fdanrh <br>sdfs sit atmet sit dolor greand fdanrh sdfs</p><br>
-							<p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed <br> virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non <br> erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident,nihilamane umquam magnum ac cognitione.</p>
+							<h1><?php $sql="SELECT value FROM header WHERE id=6";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></span></h1>
+							<p><?php $sql="SELECT value FROM header WHERE id=7";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p><br>
+							<p><?php $sql="SELECT value FROM header WHERE id=8";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 						</div>
 						<img src="assets/images/comp.png" class="col-md-6 col-xs-12 col-sm-12">
 					</div>
@@ -165,9 +168,9 @@
 					<div class="container">
 						<img src="assets/images/helmet.png" class="col-md-6 col-xs-12 col-sm-12">
 						<div class="text col-md-6 col-xs-12 col-sm-12">
-							<h1 class="text-right">HANG <span>ON TO</span> YER HELMET</h1>
-							<p class="text-right">Lorem ipsum dolor sit atmet sit dolor greand fdanrh <br>sdfs sit atmet sit dolor greand fdanrh sdfs</p><br>
-							<p class="text-right">In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed <br> virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non <br> erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.</p>
+							<h1 class="text-right"><?php $sql="SELECT value FROM header WHERE id=9";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></h1>
+							<p class="text-right"><?php $sql="SELECT value FROM header WHERE id=10";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p><br>
+							<p class="text-right"><?php $sql="SELECT value FROM header WHERE id=11";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 						</div>
 					</div>
 				</section>
@@ -175,16 +178,16 @@
 					<div class="container">
 						<ul class="col-md-4">
 							<li class="first active">
-								<p>LOREM DOLOR</p>
-								<p>Sit amet, consectetuar adipiscing elit <br> hac divisione rem ipsam prorsus</p>
+								<p><?php $sql="SELECT value FROM header WHERE id=12";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
+								<p><?php $sql="SELECT value FROM header WHERE id=13";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 							</li>
 							<li class="second">
-								<p>LOREM DOLOR</p>
-								<p>Sit amet, consectetuar adipiscing elit <br> hac divisione rem ipsam prorsus</p>
+								<p><?php $sql="SELECT value FROM header WHERE id=14";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
+								<p><?php $sql="SELECT value FROM header WHERE id=15";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 							</li>
 							<li class="third">
-								<p>LOREM DOLOR</p>
-								<p>Sit amet, consectetuar adipiscing elit <br> hac divisione rem ipsam prorsus</p>
+								<p><?php $sql="SELECT value FROM header WHERE id=16";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
+								<p><?php $sql="SELECT value FROM header WHERE id=17";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 							</li>
 						</ul>
 						<img src="assets/images/mac.png" class="col-md-8 col-xs-12 col-sm-12 mac">
@@ -260,8 +263,8 @@
 					<div class="container">
 						<div class="text col-md-5 col-xs-12 col-sm-12">
 							<div class="row text-center">
-								<h1>GET LIVE UPDATES</h1>
-								<p>No spam promise - only latest news and prices!</p>
+								<h1><?php $sql="SELECT value FROM header WHERE id=18";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></h1>
+								<p><?php $sql="SELECT value FROM header WHERE id=19";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 							</div>
 						</div>
 						<div class="inputs col-md-7 col-xs-12 col-sm-12">
@@ -275,16 +278,16 @@
 				</section>
 				<section id="price" class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
 					<div class="container">
-						<h1 class="text-center">PRODUCT <span>PACKAGES</span></h1>
-						<p class="text-center">Lorem ipsum dolor sit atmet sit dolor greand fdanrh s <br> dfs sit atmet sit dolor greand fdanrh sdfs</p>
+						<h1 class="text-center"><?php $sql="SELECT value FROM header WHERE id=20";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></h1>
+						<p class="text-center"><?php $sql="SELECT value FROM header WHERE id=21";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 						
 						<div class="price col-md-4 col-xs-12 col-sm-12">
 							<div class="row">
-								<div class="heading col-md-12 col-sm-12 col-xs-12">INVIDUAL</div>
+								<div class="heading col-md-12 col-sm-12 col-xs-12"><?php $sql="SELECT value FROM header WHERE id=22";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></div>
 								<div class="text-center cost">
 									<span class="currency">$</span>
-									19
-									<span class="period">PER MONTH</span>
+									<?php $sql="SELECT value FROM header WHERE id=23";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?>
+									<span class="period"><?php $sql="SELECT value FROM header WHERE id=24";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></span>
 								</div>
 								<div class="details col-md-12 text-center">
 									<div class="row">
@@ -301,11 +304,11 @@
 						</div>
 						<div class="price col-md-4 col-xs-12 col-sm-12">
 							<div class="row willBeBlue">
-								<div class="heading col-md-12 col-sm-12 col-xs-12">STUDIO</div>
+								<div class="heading col-md-12 col-sm-12 col-xs-12"><?php $sql="SELECT value FROM header WHERE id=25";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></div>
 								<div class="blue text-center cost">
 									<span class="currency">$</span>
-									29
-									<span class="period">SUBSCRIPTION</span>
+									<?php $sql="SELECT value FROM header WHERE id=26";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?>
+									<span class="period"><?php $sql="SELECT value FROM header WHERE id=27";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></span>
 								</div>
 								<div class="details col-md-12 text-center">
 									<div class="row">
@@ -322,11 +325,11 @@
 						</div>
 						<div class="price col-md-4 col-xs-12 col-sm-12">
 							<div class="row willBeBlue">
-								<div class="heading col-md-12 col-sm-12 col-xs-12">ENTERPRISE</div>
+								<div class="heading col-md-12 col-sm-12 col-xs-12"><?php $sql="SELECT value FROM header WHERE id=28";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></div>
 								<div class="blue text-center cost">
 									<span class="currency">$</span>
-									49
-									<span class="period">PER MONTH</span>
+									<?php $sql="SELECT value FROM header WHERE id=29";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?>
+									<span class="period"><?php $sql="SELECT value FROM header WHERE id=30";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></span>
 								</div>
 								<div class="details col-md-12 text-center">
 									<div class="row">
@@ -345,8 +348,8 @@
 				</section>
 				<section id="award" class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
 					<div class="container text-center">
-						<h1><span>OUR</span> AWARDS</h1>
-						<p>Lorem ipsum dolor sit atmet sit dolor greand fdanrh s <br> dfs sit atmet sit dolor greand fdanrh sdfs</p>
+						<h1><?php $sql="SELECT value FROM header WHERE id=31";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></h1>
+						<p><?php $sql="SELECT value FROM header WHERE id=32";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 						<img src="assets/images/logo1.png">
 						<img src="assets/images/logo1.png">
 						<img src="assets/images/logo1.png">
@@ -356,10 +359,10 @@
 				<section id="feedback" class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
 					<div class="container text-center">
 						<div class="transparent">
-							<h1>WHAT <span>CLIENTS</span> SAY</h1>
-							<p class="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel <br> rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi <br> mauris, nec rhoncus dolor consectetur vitae lorem ipsum.</p>
-							<p class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel <br> rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi <br> mauris, nec rhoncus dolor consectetur vitae lorem ipsum.</p>
-							<p class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel <br> rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi <br> mauris, nec rhoncus dolor consectetur vitae lorem ipsum.</p>
+							<h1><?php $sql="SELECT value FROM header WHERE id=33";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></h1>
+							<p class="text1"><?php $sql="SELECT value FROM header WHERE id=34";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
+							<p class="text2"><?php $sql="SELECT value FROM header WHERE id=35";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
+							<p class="text3"><?php $sql="SELECT value FROM header WHERE id=36";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 
 						</div>
 						
@@ -391,15 +394,15 @@
 				</section>
 				<section id="team" class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
 					<div class="container text-center">
-						<h1>BEHIND <span>THE</span> SCENES</h1>
-						<p class="text">Lorem ipsum dolor sit atmet sit dolor greand fdanrh s <br>dfs sit atmet sit dolor greand fdanrh sdfs</p><br><br>
-						<p class="text">In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil <br>ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae <br>qui non vident, nihilamane umquam magnum ac cognitione. In his rest gestiret. Sed ipsam inchoavit, nihil ampliusuma. <br> Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, <br>nihilamane umquam magnum ac cognitione.</p>
+						<h1><?php $sql="SELECT value FROM header WHERE id=37";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></h1>
+						<p class="text"><?php $sql="SELECT value FROM header WHERE id=38";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p><br><br>
+						<p class="text"><?php $sql="SELECT value FROM header WHERE id=39";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 						<div class="row members col-md-12">
 							<div class="col-md-3">
 								<div class="row">
 									<img src="assets/images/mike.jpg" alt="">
 									<div class="text2 text-center">
-										<p>Mike has worked with CARE USA, for 12 <br> years holding positions such as Deputy <br> Country Director to Director of Programs <br> and Information Systems.</p>
+										<p><?php $sql="SELECT value FROM header WHERE id=40";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?>
 										<i class="fa fa-envelope"></i>
 										<i class="fa fa-twitter"></i>
 										<i class="fa fa-facebook"></i>
@@ -414,7 +417,7 @@
 								<div class="row">
 									<img src="assets/images/second.jpg" alt="">
 									<div class="text2 text-center">
-										<p>Mike has worked with CARE USA, for 12 <br> years holding positions such as Deputy <br> Country Director to Director of Programs <br> and Information Systems.</p>
+										<p><?php $sql="SELECT value FROM header WHERE id=41";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?>
 										<i class="fa fa-skype"></i>
 									</div>
 									<p class="name"><b>MIKE BOLDER</b></p>
@@ -425,7 +428,7 @@
 								<div class="row">
 									<img src="assets/images/third.jpg" alt="">
 									<div class="text2 text-center special">
-										<p>Ellen has over 13 years of <br> experience in development projects <br> as a senior consultant and project <br> manager in the areas of project management, fund and board <br> development, strategic & financial <br> planning, monitoring & evaluation.</p>
+										<p><?php $sql="SELECT value FROM header WHERE id=42";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 										<i class="fa fa-envelope"></i>
 										<i class="fa fa-twitter"></i>
 									</div>
@@ -437,7 +440,7 @@
 								<div class="row">
 									<img src="assets/images/fourth.jpg" alt="">
 									<div class="text2 text-center special2">
-										<p>Mike has worked with CARE USA for <br> 12 years.</p>
+										<p><?php $sql="SELECT value FROM header WHERE id=43";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 										<i class="fa fa-envelope"></i>
 										<i class="fa fa-twitter"></i>
 										<i class="fa fa-facebook"></i>
@@ -453,8 +456,8 @@
 				<section id="startup" class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
 					<div class="container">
 						<i class="icon icon-seo-icons-24 pull-left col-sm-12 col-xs-12 col-md-1" aria-hidden="true"></i>
-						<h2>LAUNCH YOUR STARTUP NOW!</h2>
-						<p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret.</p>
+						<h2><?php $sql="SELECT value FROM header WHERE id=44";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></h2>
+						<p><?php $sql="SELECT value FROM header WHERE id=45";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 						<button>GET THIS TEMPLATE</button>
 					</div>
 				</section>
@@ -463,7 +466,7 @@
 						<div class="col-md-5 footerDiv">
 							<div class="row">
 								<img src="assets/images/logo-white.png" alt="">
-								<p>Ut enim ad minim veniam, quis nostrud exercitation <br> ullamco. Qui officia deserunt mollit anim id est <br> laborum. Ut enim ad minim veniam, quis nostrud <br> exercitation ullamco. Nisi ut aliquid ex ea commodi <br> consequatur?<br><br><b>John Doeson, Founder.</b></p>
+								<p><?php $sql="SELECT value FROM header WHERE id=46";$query=mysqli_query($conn,$sql);$row=mysqli_fetch_assoc($query); echo $row['value']?></p>
 							</div>
 						</div>
 						<div class="col-md-4 network footerDiv">
